@@ -1,0 +1,63 @@
+{
+  "model": "ordinary_least_squares_linear_regression",
+  "split_seed": 42,
+  "split_motors": {
+    "train": 210,
+    "validation": 45,
+    "test_held_out": 45
+  },
+  "feature_names": [
+    "intercept",
+    "beban_pct",
+    "arus_A",
+    "tegangan_V",
+    "suhu_belitan_C",
+    "getaran_rms_mm_s",
+    "kecepatan_rpm",
+    "tipe_11kW",
+    "tipe_22kW"
+  ],
+  "coefficients": [
+    158.38546991932708,
+    10.673245252294254,
+    -1.458585857213739,
+    -0.7583949703655091,
+    6.073706319148104,
+    -19.830864502789808,
+    62.410556613608456,
+    -8.050735744742985,
+    -7.703619528892814
+  ],
+  "numeric_means_train": {
+    "kecepatan_rpm": 1470.6378539230877,
+    "arus_A": 16.243071559374354,
+    "suhu_belitan_C": 155.29157099590827,
+    "tegangan_V": 379.9869277363061,
+    "beban_pct": 74.35471193125834,
+    "getaran_rms_mm_s": 3.0212348570220717
+  },
+  "numeric_stds_train": {
+    "kecepatan_rpm": 5.876134851919031,
+    "arus_A": 9.028085835508543,
+    "suhu_belitan_C": 128.432283854346,
+    "tegangan_V": 4.003134194239084,
+    "beban_pct": 12.367725578658083,
+    "getaran_rms_mm_s": 1.4198215844949937
+  },
+  "median_imputation_train": {
+    "kecepatan_rpm": 1472.0,
+    "arus_A": 14.24,
+    "suhu_belitan_C": 71.1,
+    "tegangan_V": 380.0,
+    "beban_pct": 74.1,
+    "getaran_rms_mm_s": 2.36
+  },
+  "categorical_reference": "5.5kW",
+  "metrics_validation": {
+    "rows_all": 10964,
+    "rows_rul_le_60": 2702,
+    "mae_all_days": 45.7421,
+    "mae_rul_le_60_days": 31.0175,
+    "negative_raw_predictions_clipped_to_zero": 612
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "model": "polynomial_regression_ols_degree_2_selected_terms",
+  "split_manifest": "artifacts/split_motor_kasus03.csv",
+  "feature_names": [
+    "intercept",
+    "beban_z",
+    "arus_z",
+    "tegangan_z",
+    "suhu_z",
+    "getaran_z",
+    "kecepatan_z",
+    "arus_z2",
+    "suhu_z2",
+    "getaran_z2",
+    "beban_x_arus",
+    "suhu_x_getaran",
+    "tipe_11kW",
+    "tipe_22kW"
+  ],
+  "coefficients": [
+    148.46452607208897,
+    11.35277369579664,
+    -13.678755147032135,
+    -0.7051100624789288,
+    4.083176316949901,
+    -69.74547559434353,
+    41.8338159228187,
+    11.911988719006422,
+    2.400580405400963,
+    38.913418679355885,
+    -3.3337789322882267,
+    -3.487386929068773,
+    8.910032363685856,
+    5.88900221574309
+  ],
+  "median_imputation_train": {
+    "beban_pct": 74.1,
+    "arus_A": 14.24,
+    "tegangan_V": 380.0,
+    "suhu_belitan_C": 71.1,
+    "getaran_rms_mm_s": 2.36,
+    "kecepatan_rpm": 1472.0
+  },
+  "numeric_means_train": {
+    "beban_pct": 74.35471193125792,
+    "arus_A": 16.24307155937456,
+    "tegangan_V": 379.9869277363009,
+    "suhu_belitan_C": 155.29157099591492,
+    "getaran_rms_mm_s": 3.0212348570221157,
+    "kecepatan_rpm": 1470.6378539230877
+  },
+  "numeric_stds_train": {
+    "beban_pct": 12.367725578658284,
+    "arus_A": 9.028085835508545,
+    "tegangan_V": 4.003134194238974,
+    "suhu_belitan_C": 128.4322838543504,
+    "getaran_rms_mm_s": 1.419821584495069,
+    "kecepatan_rpm": 5.876134851918551
+  },
+  "training_sensor_ranges": {
+    "beban_pct": {
+      "min": 38.9,
+      "p01": 49.7,
+      "p99": 99.8,
+      "max": 110.0
+    },
+    "arus_A": {
+      "min": 4.13,
+      "p01": 5.56,
+      "p99": 40.17,
+      "max": 47.24
+    },
+    "tegangan_V": {
+      "min": 363.4,
+      "p01": 370.6,
+      "p99": 389.3,
+      "max": 396.0
+    },
+    "suhu_belitan_C": {
+      "min": 39.6,
+      "p01": 49.5,
+      "p99": 356.8,
+      "max": 372.0
+    },
+    "getaran_rms_mm_s": {
+      "min": 1.53,
+      "p01": 1.72,
+      "p99": 7.25,
+      "max": 8.01
+    },
+    "kecepatan_rpm": {
+      "min": 1451.0,
+      "p01": 1457.0,
+      "p99": 1480.0,
+      "max": 1485.0
+    }
+  },
+  "nonlinear_term_means_train": {
+    "arus_z2": 1.0,
+    "suhu_z2": 1.0000000000000002,
+    "getaran_z2": 1.0,
+    "beban_x_arus": 0.3009389860318335,
+    "suhu_x_getaran": 0.04612175401643253
+  },
+  "nonlinear_term_stds_train": {
+    "arus_z2": 1.4799423768509687,
+    "suhu_z2": 0.7342985431705448,
+    "getaran_z2": 1.8051720950946513,
+    "beban_x_arus": 0.9896735010046998,
+    "suhu_x_getaran": 0.9998248425379233
+  },
+  "target_range_train": {
+    "min": 0.0,
+    "max": 543.0
+  },
+  "categorical_reference": "5.5kW",
+  "metrics_validation": {
+    "rows_all": 10964,
+    "rows_rul_le_60": 2702,
+    "mae_all_days": 43.1505,
+    "mae_rul_le_60_days": 25.9675,
+    "negative_raw_predictions_clipped_to_zero": 217
+  },
+  "validation_status_counts_at_28_14_day_thresholds": {
+    "aman": 9726,
+    "pesan_pengganti_sekarang": 556,
+    "segera_ganti": 682
+  }
+}

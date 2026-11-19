@@ -1,0 +1,58 @@
+{
+  "model": "ordinary_least_squares_linear_regression",
+  "coefficients": [
+    155.764941874394,
+    10.396654590909462,
+    -0.31880017551893625,
+    -0.5471304013942767,
+    4.923035454386992,
+    -19.230484903353386,
+    61.77445607326594,
+    -6.893378322091491,
+    -10.25052308452039
+  ],
+  "feature_names": [
+    "intercept",
+    "beban_pct_z",
+    "arus_A_z",
+    "tegangan_V_z",
+    "suhu_belitan_C_z",
+    "getaran_rms_mm_s_z",
+    "kecepatan_rpm_z",
+    "tipe_11kW",
+    "tipe_22kW"
+  ],
+  "median_imputation_train": {
+    "beban_pct": 74.5,
+    "arus_A": 14.2,
+    "tegangan_V": 380.0,
+    "suhu_belitan_C": 71.4,
+    "getaran_rms_mm_s": 2.36,
+    "kecepatan_rpm": 1472.0
+  },
+  "numeric_means_train": {
+    "beban_pct": 74.71956874667926,
+    "arus_A": 16.210425497372928,
+    "tegangan_V": 379.9918398370624,
+    "suhu_belitan_C": 156.73422575122498,
+    "getaran_rms_mm_s": 3.0210983529133952,
+    "kecepatan_rpm": 1470.6066768994629
+  },
+  "numeric_stds_train": {
+    "beban_pct": 12.497521239440765,
+    "arus_A": 9.021773855419505,
+    "tegangan_V": 3.997108765012071,
+    "suhu_belitan_C": 128.8743735435568,
+    "getaran_rms_mm_s": 1.4176218001578913,
+    "kecepatan_rpm": 5.861664542886633
+  },
+  "categorical_reference": "5.5kW",
+  "metrics_test": {
+    "rows_all": 11403,
+    "rows_rul_le_60": 2705,
+    "mae_all_days": 54.8973,
+    "mae_rul_le_60_days": 32.15,
+    "negative_raw_predictions_clipped_to_zero": 619
+  },
+  "fit_rows": 67756
+}

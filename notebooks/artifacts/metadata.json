@@ -1,0 +1,46 @@
+{
+  "model_name": "RandomForestRegressor",
+  "created_at_utc": "2026-11-19T15:55:46.317312+00:00",
+  "features": [
+    "beban_pct",
+    "arus_A",
+    "tegangan_V",
+    "suhu_belitan_C",
+    "getaran_rms_mm_s",
+    "kecepatan_rpm",
+    "tipe_motor_norm"
+  ],
+  "target": "rul_hari",
+  "preprocessing": {
+    "numeric_imputation": "median",
+    "numeric_medians": {
+      "beban_pct": 74.7,
+      "arus_A": 14.75,
+      "tegangan_V": 380.0,
+      "suhu_belitan_C": 70.4,
+      "getaran_rms_mm_s": 2.35,
+      "kecepatan_rpm": 1472.0
+    },
+    "categorical_imputation": "most_frequent",
+    "categorical_value": "11kw",
+    "negative_vibration": "treated as missing",
+    "prediction_floor_days": 0
+  },
+  "metrics": {
+    "validation": {
+      "MAE semua baris": 49.550613406245475,
+      "MAE RUL <= 60": 11.384693116389375
+    },
+    "test": {
+      "MAE semua baris": 48.30194516407177,
+      "MAE RUL <= 60": 13.906142029256813
+    }
+  },
+  "split": {
+    "method": "grouped by motor_id_norm",
+    "train_motors": 210,
+    "validation_motors": 45,
+    "test_motors": 45
+  },
+  "scikit_learn_version": "1.4.2"
+}

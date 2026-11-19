@@ -1,0 +1,38 @@
+{
+  "primary_metric": "MAE pada baris dengan rul_hari <= 60 (lebih kecil lebih baik)",
+  "validation": {
+    "baseline_linear": {
+      "rows_all": 10964,
+      "rows_rul_le_60": 2702,
+      "mae_all_days": 45.7421,
+      "mae_rul_le_60_days": 31.0175,
+      "negative_raw_predictions_clipped_to_zero": 612
+    },
+    "polynomial_degree_2": {
+      "rows_all": 10964,
+      "rows_rul_le_60": 2702,
+      "mae_all_days": 43.1505,
+      "mae_rul_le_60_days": 25.9675,
+      "negative_raw_predictions_clipped_to_zero": 217
+    }
+  },
+  "test_once_after_selection": {
+    "evaluation": "one-time held-out test evaluation after model selection on validation",
+    "development_motors": 255,
+    "test_motors": 45,
+    "baseline_test": {
+      "rows_all": 11403,
+      "rows_rul_le_60": 2705,
+      "mae_all_days": 54.8973,
+      "mae_rul_le_60_days": 32.15,
+      "negative_raw_predictions_clipped_to_zero": 619
+    },
+    "final_model_test": {
+      "rows_all": 11403,
+      "rows_rul_le_60": 2705,
+      "mae_all_days": 53.4631,
+      "mae_rul_le_60_days": 25.5784,
+      "negative_raw_predictions_clipped_to_zero": 269
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "order_now_threshold_days": 28,
+  "replace_soon_threshold_days": 14,
+  "basis": "Rentang pengiriman pengganti 2-4 minggu dari brief. Di atas 28 hari masih di luar waktu pengiriman maksimum; 15-28 hari masuk jendela pemesanan; 0-14 hari perlu prioritas penggantian.",
+  "interpretation": "Status memakai satu angka prediksi RUL, bukan probabilitas atau jaminan. Validation MAE untuk RUL <= 60 hari masih sekitar 26 hari; gunakan status sebagai panduan tugas, bukan keputusan operasi tanpa pemeriksaan manusia."
+}
