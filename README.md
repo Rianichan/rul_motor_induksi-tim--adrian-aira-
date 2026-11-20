@@ -1,7 +1,8 @@
-# Prediksi Sisa Umur Motor Induksi · Tim [Nama Tim]
+# Prediksi Sisa Umur Motor Induksi · Tim [Adria-Aira]
 
 **Kasus:** 03 · Sisa Umur Pakai Motor Induksi  
-**Anggota:** [Nama dan NIM seluruh anggota]  
+**Anggota:** Adrian Satria Rahardjo (2404300)
+             Aira Althafeliq Nurfirly (2401439)
 **Aplikasi:** [Tautan setelah deploy]  
 **Video demo:** [Tautan video]
 
@@ -68,7 +69,7 @@ reports/                       laporan dan gambar EDA
 
 ## Berkas laporan dan demo
 
-- Laporan: `reports/LAPORAN.md` (isi nama/NIM anggota dan tautan aplikasi sebelum dikumpulkan).
+- Laporan: `reports/LAPORAN.md` .
 - Alur video: `reports/ALUR_VIDEO.md`.
 - Notebook EDA: `notebooks/01_eda_pembersihan.ipynb`.
 
@@ -76,6 +77,6 @@ reports/                       laporan dan gambar EDA
 
 | Nama | NIM | Kontribusi |
 |---|---|---|
-| [Nama] | [NIM] | EDA dan pembersihan |
-| [Nama] | [NIM] | Pemodelan dan evaluasi |
-| [Nama] | [NIM] | Aplikasi dan dokumentasi |
+| Adrian | [2404300] | EDA dan pembersihan |
+| [Adrian & Aira] | [NIM] | Pemodelan dan evaluasi |
+| Aira  | [2401439] | Aplikasi dan dokumentasi |
