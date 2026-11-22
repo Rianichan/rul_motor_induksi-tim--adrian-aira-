@@ -3,8 +3,8 @@
 **Kasus:** 03 · Sisa Umur Pakai Motor Induksi  
 **Anggota:** Adrian Satria Rahardjo (2404300)
              Aira Althafeliq Nurfirly (2401439)
-**Aplikasi:** [Tautan setelah deploy]  
-**Video demo:** [Tautan video]
+**Aplikasi:** https://drive.google.com/drive/folders/17noDJaEt9xB_jYcWGreCOq76bG33Yhjm?usp=sharing 
+**Video demo:** https://drive.google.com/drive/folders/17noDJaEt9xB_jYcWGreCOq76bG33Yhjm?usp=sharing
 
 ## Masalah dan pengguna
 
